@@ -19,6 +19,7 @@ Route::any('Admin/Index/menu','Admin\IndexController@menu');
 Route::any('Admin/Index/main','Admin\IndexController@main');
 Route::any('Admin/Index/top','Admin\IndexController@top');
 Route::any('Admin/Index/drag','Admin\IndexController@drag');
+//1111
 
 //商品路由
 Route::any('Admin/Goods/goods_type_list','Admin\Goods_typeController@goods_type_list');//商品类型
