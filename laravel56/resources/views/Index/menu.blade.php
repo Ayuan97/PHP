@@ -45,11 +45,13 @@
         <ul id="menu-ul">
             <li class="explode" key="02_cat_and_goods" name="menu"> 商品管理
                 <ul>
-                    <li class="menu-item"><a href="{{URL::asset('Goods/goods_list')}}}" target="main-frame">商品列表</a></li>
+                    <li class="menu-item"><a href="goods.php?act=list" target="main-frame">商品列表</a></li>
                     <li class="menu-item"><a href="goods.php?act=add" target="main-frame">添加新商品</a></li>
                     <li class="menu-item"><a href="category.php?act=list" target="main-frame">商品分类</a></li>
                     <li class="menu-item"><a href="comment_manage.php?act=list" target="main-frame">用户评论</a></li>
-                    <li class="menu-item"><a href="brand.php?act=list" target="main-frame">商品品牌</a></li>
+                    <li class="menu-item">
+                        <a href="{{URL('Admin/Brand/brand_list')}}" target="main-frame">商品品牌</a>
+                    </li>
                     <li class="menu-item"><a href="goods_type.php?act=list" target="main-frame">商品类型</a></li>
                     <li class="menu-item"><a href="goods.php?act=trash" target="main-frame">商品回收站</a></li>
                     <li class="menu-item"><a href="picture_batch.php" target="main-frame">图片批量处理</a></li>
@@ -62,7 +64,6 @@
                     <li class="menu-item"><a href="goods.php?act=add&amp;extension_code=virtual_card" target="main-frame">添加虚拟商品</a></li>
                     <li class="menu-item"><a href="virtual_card.php?act=change" target="main-frame">更改加密串</a></li>
                     <li class="menu-item"><a href="goods_auto.php?act=list" target="main-frame">商品自动上下架</a></li>
-                    <li class="menu-item"><a href="{{URL('Admin/Attribute/attribute_list')}}" target="main-frame">商品属性</a></li>
                 </ul>
             </li>
             <li class="collapse" key="03_promotion" name="menu"> 促销管理

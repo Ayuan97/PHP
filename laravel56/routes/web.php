@@ -20,9 +20,8 @@ Route::any('Admin/Index/main','Admin\IndexController@main');
 Route::any('Admin/Index/top','Admin\IndexController@top');
 Route::any('Admin/Index/drag','Admin\IndexController@drag');
 
-Route::any('Admin/Attribute/attribute_add','Admin\AttributeController@attribute_add');
-Route::any('Admin/Attribute/attribute_list','Admin\AttributeController@attribute_list');
-Route::any('Admin/Attribute/attribute_edit','Admin\AttributeController@attribute_edit');
-Route::any('Admin/Attribute/arrtibute_del/{id}','Admin\AttributeController@arrtibute_del');
-Route::any('Admin/Attribute/attribute','Admin\AttributeController@attribute');
-
+Route::any('Admin/Brand/brand_add','Admin\BrandController@brand_add');
+Route::any('Admin/Brand/brand_list','Admin\BrandController@brand_list');
+Route::any('Admin/Brand/brand_del','Admin\BrandController@brand_del');
+Route::any('Admin/Brand/brand_upd','Admin\BrandController@brand_upd');
+Route::any('Admin/Brand/add','Admin\BrandController@add');
