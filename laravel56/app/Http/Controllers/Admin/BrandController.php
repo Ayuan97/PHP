@@ -47,7 +47,7 @@ class BrandController extends Controller
                 $filename = date('Y-m-d-H-i-s').'.'.$ext;
                 Storage::disk('upload')->put($filename, file_get_contents($path));
             }
-            $data['brand_logo'] = '/PHPper/laravel56/public/brandpic/'.$filename;
+            $data['brand_logo'] = '/laravel56/public/brandpic/'.$filename;
             $res = DB::table('brand')->insert([
                 'brand_name'=>$data['brand_name'],
                 'brand_logo'=>$data['brand_logo'],
